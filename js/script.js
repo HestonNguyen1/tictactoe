@@ -24,7 +24,6 @@ function makeMove(row, col) {
 function checkWinner(row, col) {
     return (board[row][0] === currentPlayer && board[row][1] === currentPlayer && board[row][2] === currentPlayer) ||
         (board[0][col] === currentPlayer && board[1][col] === currentPlayer && board[2][col] === currentPlayer) ||
-        (board[0][0] === currentPlayer && board[1][1] === currentPlayer && board[2][2
         (board[0][0] === currentPlayer && board[1][1] === currentPlayer && board[2][2] === currentPlayer) ||
         (board[0][2] === currentPlayer && board[1][1] === currentPlayer && board[2][0] === currentPlayer);
 }
